@@ -21,7 +21,7 @@
     "build": "vue-cli-service build",
     "stylelint": "stylelint src/**/*.{html,vue,css,sass,scss} --fix",
     "eslint": "vue-cli-service lint",
-    "lint": "yarn eslint && yarn stylelint"
+    "lint": " eslint --fix --ext .js,.vue src"
   },
   "dependencies": {
     "axios": "^0.19.2",

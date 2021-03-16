@@ -24,7 +24,9 @@ module.exports = {
       // 小于或等于`1px`不转换为视窗单位，你也可以设置为你想要的值
       minPixelValue: 1,
       // 允许在媒体查询中转换`px`
-      mediaQuery: false
+      mediaQuery: false,
+      exclude: [/node_modules/], // 设置忽略文件，用正则做目录名匹配
+      landscape: false // 是否处理横屏情况
     }
   }
 }

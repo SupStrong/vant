@@ -12,6 +12,7 @@
       scrollable
       text="关注微信公众号【前端有的玩】，我们一起玩前端"
     />
+    <footer-menu />
     <van-list>
       <van-cell
         title="点击使用confirm装饰器"
@@ -22,6 +23,7 @@
       <van-cell title="使用日期工具类" :value="`今天是${currentDate}`" />
       <van-cell title="你看，右下角有一个vConsole,用来调试的" />
       <van-cell title="你再看，地址栏有一个?VNK=xxx,这是路由缓存" />
+      
     </van-list>
   </div>
 </template>
@@ -30,6 +32,7 @@
 // 使用vant 组件
 import { List, NoticeBar, Cell, Notify } from 'vant'
 
+import FooterMenu from '@/components/FooterMenu'
 // 使用装饰器
 import { confirm } from '@/decorator'
 
@@ -42,6 +45,7 @@ import { getDemoData } from '@/api/home'
 export default {
   name: 'Home',
   components: {
+    FooterMenu: FooterMenu,
     [List.name]: List,
     [Cell.name]: Cell,
     [NoticeBar.name]: NoticeBar
